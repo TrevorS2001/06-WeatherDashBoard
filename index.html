@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!-- Header Title -->
+    <div class="justify-content-center bg-primary text-white mx-0 px-1">
+        <div class="row">
+            <div class="col-12 col-md-12 col-sm-12">
+                <h1 class="display-4 text-center w-100">Weather Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Body Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-light border-1">
+                <div class="headerSearch row mx-3">
+                    <h3>Search for a City: </h3>
+                </div>
+                <div class="formInput row ml-3">
+                    <input class="border" type="text" id="searchCity"/>
+                    <button class="btn btn-primary btn-md border-0" id="btn-search">
+                        <span class="oi oi-magnifying-glass"></span>
+                    </button>
+                </div>
+                <div class="list-group row m-3" id="cities"></div>
+            </div>
+            <div class="col-9">
+                <div class="row border m-3" id="targetCity"></div>
+                <div class="row m-3" id="cityInfo"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src=".\assets\script.js"></script>
+</body>
+</html>
